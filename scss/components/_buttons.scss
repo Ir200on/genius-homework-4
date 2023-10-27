@@ -1,0 +1,68 @@
+.center {
+    &__button{
+        text-decoration: none;
+        display: flex;
+        padding: 16px 32px;
+        align-items: flex-start;
+        gap: 10px;
+        border-radius: 32px;
+        background: var(--beauty-landing-22, #2B7FFF);
+    }
+    &__button {
+        border-style: solid;
+        border-color: #2B7FFF;
+        cursor: pointer;
+        font-family: Roboto;
+        font-size: 18px;
+        font-weight: 600;
+        color: #FFF;
+    }
+    &__button a {
+        text-decoration-line: none;
+        color: #FFF;
+    }
+    &__button:active {
+        text-decoration: none;
+        cursor: pointer;
+        font-family: Roboto;
+        font-size: 18px;
+        font-weight: 600;
+        color: var(--beauty-landing-2-c-1);
+        background-color: transparent;
+        border: 2px solid #2B7FFF;
+    }
+    &__button a:active {
+        color: var(--beauty-landing-2-c-1);
+    }
+}
+
+
+.register button {
+    border-style: solid;
+    border-color: #2B7FFF;
+    cursor: pointer;
+    padding: 16px 32px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 32px;
+    background: var(--beauty-landing-22, #2B7FFF);
+    color: var(--beauty-landing-2-background, #FFF);
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 8px;
+}
+.register button a{
+    text-decoration-line: none;
+    color: #FFF;
+}
+.register button:active {
+    cursor: pointer;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--beauty-landing-2-background);
+    background-color: transparent;
+    border: 2px solid var(--beauty-landing-22);
+}

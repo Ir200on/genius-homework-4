@@ -1,0 +1,97 @@
+.About-us-2page {
+    display:flex;
+    margin-left: 100px;
+    &__text {
+        &--limited {
+        max-width: 340px;
+    }
+    }
+    &__art_text {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 40px;
+        margin-top: 34px;
+    }
+    &__art_text h1 {
+        color: var(--beauty-landing-2-c-1, #011C44);
+        font-family: Play;
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 1;
+    }
+    &__art_text span{
+        color: var(--beauty-landing-22, #2B7FFF);
+        font-family: Play;
+        font-size: 64px;
+    }
+    &__art_text #art_p_first {
+        color: var(--beauty-landing-2-c-1, #011C44);
+        font-family: Roboto;
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 30px;
+    }
+    &__art_text #art_p_two {
+        color: var(--beauty-landing-2-c-1, #011C44);
+        font-family: Roboto;
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 30px;
+    }
+    &__art_text #art_p_two span{
+        color: var(--beauty-landing-2-c-1, #011C44);
+        font-family: Roboto;
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 38px;
+        text-transform: capitalize;
+    }
+}
+
+
+.art_img {
+    display: flexbox;
+    width: 499px;
+    height: 695px;
+    margin-left: 32px;
+    &__face_before {
+        width: 335px;
+        height: 328px;
+    }
+    &__face_before {
+        width: 335px;
+        height: 328px;
+    }
+    &__face_after {
+        width: 335px;
+        height: 328px;
+        margin-left: 200px;
+    }
+    &__blue_star {
+        position: absolute;
+        padding-bottom: 30vh;
+        padding-left: 12vh;
+        margin-top: 86vh;
+        animation: mymove 5s infinite;
+    }
+    &__grey_star {
+        position: absolute;
+        padding-left: 10vh;
+        margin-top: 110vh;
+        padding-bottom: 86.58px;
+        animation: mymove 5s infinite;
+    }
+    &__dark-blue_star {
+        position: absolute;
+        margin-top: 123vh;
+        margin-left: 15vh;
+        animation: mymove 5s infinite;
+    }
+    @keyframes mymove {
+        0%   {top: 0px;}
+        25%  {top: 45px;}
+        75%  {top: 38px}
+        100% {top: 40px;}
+      }
+}

@@ -1,0 +1,168 @@
+.backdrop {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 40px;
+    transition: opacity 0.5s, visibility 0.5s;
+    &.is-hidden {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+      }
+  }
+  
+  .modal {
+    width: 100%;
+    max-width: 880px;
+    max-height: 880px;
+    width: 723px;
+    height: 681px;
+    background-color: var(--beauty-landing-2-c-1);
+    background-image: url(img2/background-blue.png);
+    border-radius: 30px;
+    position: relative;
+    padding: 42px 144px;
+    overflow-y: auto;
+    &__btn-close {
+        cursor: pointer;
+        position: absolute;
+        top: 40px;
+        right: 40px;
+      }
+  }
+  
+  
+  .modal h1 {
+      position: relative;
+      color: var(--beauty-landing-2-background, #FFF);
+      text-align: center;
+      font-family: Play;
+      font-size: 64px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      margin-bottom: 40px;
+  }
+  .modal h3 {
+      color: var(--beauty-landing-2-background, #FFF);
+      text-align: center;
+      font-family: Roboto;
+      font-size: 22px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      padding-bottom: 32px;
+  }
+  span#reg{
+      color: var(--beauty-landing-22, #2B7FFF);
+      text-decoration: none;
+      font-family: Roboto;
+      font-size: 22px;
+      font-weight: 600;
+      line-height: normal;
+  }
+  
+  .main_register form {
+      display: grid;
+      justify-content: center;
+  }
+  .main_register_form {
+    &__input {
+        width: 310px;
+        height: 52px;
+        border-radius: 32px;
+        border: 1px solid #747272;
+        outline: none;
+        padding: 0 2rem;
+        font-size: 13px;
+        background-color: unset;
+        flex-shrink: 0;
+        color: #FFF;
+    }
+    &::placeholder {
+        color: var(--beauty-landing-25);
+        font-size: 16px;
+        line-height: 1.17;
+    }
+
+    &__input #name:focus {
+        border: none;
+        color: #FFF;
+        background: #747272;
+    }
+    &__input #phone-number:focus {
+        border: none;
+        color: #FFF;
+        background: #747272;
+    }
+    &__input #email:focus {
+        border: none;
+        color: #FFF;
+        background: #747272;
+    }
+    &__input #name:focus {
+        border: none;
+        color: #FFF;
+        background: #747272;
+    }
+    &__input#name {
+        margin-bottom: 24px;
+    }
+    &__input#phone-number {
+        margin-bottom: 24px;
+    }
+    &__input#email {
+        margin-bottom: 24px;
+    }
+  }
+
+
+  .main_register button {
+      border-style: solid;
+      border-color: #2B7FFF;
+      margin-bottom: 8px;
+      cursor: pointer;
+      padding: 16px 32px;
+      align-items: flex-start;
+      gap: 10px;
+      border-radius: 32px;
+      background: var(--beauty-landing-22, #2B7FFF);
+      color: var(--beauty-landing-2-background, #FFF);
+      font-family: Roboto;
+      font-size: 18px;
+      font-weight: 600;
+      line-height: normal;
+  }
+  .main_register button:active {
+      cursor: pointer;
+      font-family: Roboto;
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--beauty-landing-2-background);
+      background-color: transparent;
+      border: 2px solid var(--beauty-landing-22);
+      transition: 0.2s;
+  }
+  
+  form p{
+      color: var(--beauty-landing-25, #747272);
+      text-align: center;
+      font-family: Roboto;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 18px; 
+  }
+  .main_register span{
+      color: var(--beauty-landing-25, #747272);
+      font-family: Roboto;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 18px;
+      text-decoration-line: underline;
+  }

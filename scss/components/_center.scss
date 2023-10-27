@@ -1,0 +1,38 @@
+#vector {
+    margin-top: 45px;
+}
+
+.center {
+    background: linear-gradient(89deg, #FFF 30.62%, rgba(255, 255, 255, 0.85) 41.31%, rgba(255, 255, 255, 0.19) 58.65%, rgba(255, 255, 255, 0.00) 72.78%);
+    height: 600.934px;
+    &__content-1page {
+        margin-left: 206px;
+        padding-top: 48.52px;
+    }
+    &__content-1page #par_one {
+        font-family: Roboto;
+        font-size: 18px;
+        font-weight: 400;
+        color: var(--beauty-landing-2-c-1, #011C44);
+        padding-bottom: 16px;
+        padding-left: 9px;
+    }
+    &__content-1page h1{
+        color: var(--beauty-landing-22, #2B7FFF);
+        font-family: Play;
+        font-size: 140px;
+        font-weight: 700;
+        line-height: 114px; 
+        text-transform: capitalize;
+        padding-bottom: 40px;
+    }
+    &__content-1page #par_two {
+        padding-left: 11px;
+        color: var(--beauty-landing-2-c-3, #4A4A4A);
+        font-family: Roboto;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 18px; 
+        padding-top: 14px;
+    }
+}

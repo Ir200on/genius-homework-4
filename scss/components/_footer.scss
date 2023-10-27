@@ -1,0 +1,78 @@
+.footer {
+    display: flex;
+    background-color: var(--beauty-landing-2-c-1);
+    color: var(--beauty-landing-2-background);
+    background-image: url(/img/background-footer.png);
+    font-family: Roboto;
+    gap: 186px;
+    &__logo {
+        cursor: pointer;
+        margin-top: 56px;
+        width: 83px;
+        height: 42px;
+        margin-left: 100px;
+    }
+    &__about_us--ul{
+        text-decoration: none;
+        list-style: none;
+    }
+    &__about_us--ul a{
+        text-decoration: none;
+        color: var(--beauty-landing-2-background);
+    }
+    &__about_us--about {
+        text-decoration: none;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    &__about_us--about:hover {
+        color: #2B7FFF;
+        transition: 0.2s;
+    }
+    &__about_us {
+        margin-top: 56px;
+        margin-bottom: 40px;
+    }
+    &__about_us li{
+        margin-bottom: 16px;
+    }
+    &__about_us--info {
+        margin-top: 56px;
+        margin-bottom: 40px;
+    }
+    &__about_us--info li {
+        margin-bottom: 16px;
+    }
+    &__about_us--ul {
+        text-decoration: none;
+        color: var(--beauty-landing-2-background);
+    }
+    &__about_us--ul {
+        text-decoration: none;
+        color: var(--beauty-landing-2-background);
+    }
+    &__about_us--confidenc {
+        position: absolute;
+        margin-top: 56px;
+        margin-bottom: 40px;
+        position: absolute;
+        margin-left: 132vh;
+    }
+    &__about_us--confidenc li {
+        margin-bottom: 16px; 
+        text-decoration: none;
+    }
+    &__about_us--confidenc span {
+        color: var(--beauty-landing-25, #747272);
+        font-size: 13px;
+    }
+    &__about_us--confidenc:hover {
+        color: #2B7FFF;
+        transition: 0.2s;
+    }
+    &__about_us--confidenc_conf-img {
+        position: relative;
+        padding-left: 6.2vh;
+        bottom: 0;
+    }
+}
