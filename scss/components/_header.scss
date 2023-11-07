@@ -34,6 +34,27 @@
     &__text a {
         text-decoration: none;
     }
+    &__text_one {
+        @media screen and (max-width: 1200px) {
+        display: none;
+    }
+    }
+}
+
+.burger-menu {
+    position: absolute;
+    z-index: -1;
+    top: 25px;
+    right: 50px;
+    background: transparent;
+    border: none;
+    color: #FFF;
+    display: none;
+
+    @media screen and (max-width: 1200px){
+        z-index: 1;
+        display: inline-block;
+    }
 }
 
 

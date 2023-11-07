@@ -16,11 +16,30 @@
 <body>
     
     <div class="main">
+        <button class="burger-menu menu-btn-open">
+            <svg width="24" height="24">
+                <use href="./img/sprite/symbol-defs4.svg#icon-Vector"></use>
+            </svg>
+        </button>
+        <div class="mobile-menu">
+            <button class="menu-btn-close mobile-menu__btn-close" type="button">Close</button>
+            <div class="mobile-menu__logo"><a href="#"><img src="./img/logo.png" alt=""></a></div>
+            <div class="mobile-menu__nav">
+                <ul>
+                    <li class="mobile-menu__nav-link"><a href="#About-us">Про нас</a></li>
+                    <li><a href="#Why-we">Чому ми</a></li>
+                    <li><a href="#What-we-do">Наші процедури</a></li>
+                    <li><a href="#Where-find">Контакти</a></li>
+                </ul>
+            </div>
+        </div>
         <div class="header">
     
             <div class="nav">
             <img id="logo" src="img/logo.png" alt="">
-    
+            
+            <div class="nav__text_one">
+
             <div class="nav__text">
             <a href="#About-us"><p class="nav_one">Про нас</p></a>
             <a href="#Why-we"><p class="nav_two">Чому ми</p></a>
@@ -28,10 +47,15 @@
             <a href="#Where-find"><p class="nav_four">Контакти</p></a>
             </div>
             
+            
             <a class="link2" href="tel:+38(096)0000007"><img id="icons_one" src="img/telephone_icon.png"  alt=""></a>
             <img id="icons_two" src="img/facebook_icon.png" alt="">
             <img id="icons_three" src="img/instagram_icon.png" alt="">
+
             </div>
+            </div>
+            
+            
     
         </div>
 
@@ -67,7 +91,7 @@
         <img class="art_img__face_before" src="img/Mask_group_one.png" alt="face-before">
         <img class="art_img__grey_star" src="img/down_star.png" alt="grey-star">
         <img class="art_img__blue_star" src="img/up_star.png" alt="">
-        <img class="art_img__face_after"src="img/Mask_group_two.png" alt="face-after">
+        <img class="art_img__face_after" src="img/Mask_group_two.png" alt="face-after">
         </div>
 
        </div>
@@ -130,12 +154,12 @@
         </a>
         </div>
 
-        <div class="slider__slider_radio" id="slider_radio">
+        <!-- <div class="slider__slider_radio" id="slider_radio">
             <input type="radio" name="slider" id="slide1" checked>
             <input type="radio" name="slider" id="slide2">
             <input type="radio" name="slider" id="slide3">
             <input type="radio" name="slider" id="slide4">
-        </div>
+        </div> -->
     </div>
 
 </div>
@@ -263,6 +287,7 @@
       </div>
     </div>
 <script src="./js/modal.js"></script>
+<script src="./js/mobile-menu.js"></script>
 
 
 
