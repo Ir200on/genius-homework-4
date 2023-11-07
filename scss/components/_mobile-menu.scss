@@ -28,4 +28,21 @@
         padding-top: 24px;
         padding-left: 24px;
     }
+
+    &__t a{
+        color: #011C44;
+
+        &:hover {
+            color: #2B7FFF;
+        }
+    }
+
+
+    &__icon {
+        padding-left: 24px;
+        padding-top: 24px;
+    }
+    &__link3 {
+        padding-right: 8px;
+    }
 }
