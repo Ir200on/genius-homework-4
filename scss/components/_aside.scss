@@ -1,11 +1,21 @@
 .not {
     background: url(background_blue.png), no-repeat;
+    background-repeat: no-repeat;
     width: 100%;
     margin-top: -9vh;
+
+    @media screen and (max-width: $bp--desktop) {
+        margin-top: 12px;
+        background-position: top;
+    }
+
     &__aside {
         text-align: center;
         padding-top: 23vh;
         margin-bottom: 96px;
+        @media screen and (max-width: $bp--desktop) {
+            margin-bottom: 40px;
+        }
     }
     &__aside h1 {
         color: var(--beauty-landing-2-c-1, #011C44);
@@ -28,6 +38,10 @@
 .block {
     display: inline-flex;
     margin-left: 45px;
+    @media screen and (max-width: $bp--desktop) {
+        flex-direction: column-reverse;
+        gap: 16px;
+    }
 
     &__block_one {
     display: flex;

@@ -55,6 +55,9 @@
     width: 499px;
     height: 695px;
     margin-left: 32px;
+    @media screen and (max-width: $bp--desktop) {
+        display: none;
+    }
     &__face_before {
         width: 335px;
         height: 328px;
@@ -66,18 +69,15 @@
     &__face_after {
         width: 335px;
         height: 328px;
-        // margin-left: 200px;
     }
     &__blue_star {
         position: absolute;
         padding-bottom: 30vh;
-        // padding-left: 12vh;
         margin-top: 86vh;
         animation: mymove 5s infinite;
     }
     &__grey_star {
         position: absolute;
-        // padding-left: 10vh;
         margin-top: 110vh;
         padding-bottom: 86.58px;
         animation: mymove 5s infinite;

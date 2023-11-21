@@ -4,13 +4,26 @@
     color: var(--beauty-landing-2-background);
     background-image: url(/img/background-footer.png);
     font-family: Roboto;
-    gap: 186px;
+    flex-direction: column;
+
+    text-align: center;
+    align-items: center;
+    gap: 13px;
+    @media screen and (min-width: $bp--desktop) {
+        gap: 180px;
+        flex-direction: row;
+        align-items: flex-start;
+        text-align: left;
+    }
     &__logo {
         cursor: pointer;
-        margin-top: 56px;
+        margin-top: 10px;
         width: 83px;
         height: 42px;
-        margin-left: 100px;
+        // margin-left: 100px;
+        @media screen and (min-width: $bp--desktop) {
+            margin: 56px;
+        }
     }
     &__about_us--ul{
         text-decoration: none;
@@ -30,18 +43,26 @@
         transition: 0.2s;
     }
     &__about_us {
-        margin-top: 56px;
-        margin-bottom: 40px;
+        @media screen and (min-width: $bp--desktop) {
+            margin-top: 56px;
+            margin-bottom: 40px;
+        }
     }
     &__about_us li{
-        margin-bottom: 16px;
+        @media screen and (min-width: $bp--desktop) {
+            margin-bottom: 16px;
+        }
     }
     &__about_us--info {
-        margin-top: 56px;
-        margin-bottom: 40px;
+        @media screen and (min-width: $bp--desktop) {
+            margin-top: 56px;
+            margin-bottom: 40px;
+        }
     }
     &__about_us--info li {
-        margin-bottom: 16px;
+        @media screen and (min-width: $bp--desktop) {
+            margin-bottom: 16px;
+        }
     }
     &__about_us--ul {
         text-decoration: none;
@@ -52,15 +73,17 @@
         color: var(--beauty-landing-2-background);
     }
     &__about_us--confidenc {
-        position: absolute;
-        margin-top: 56px;
-        margin-bottom: 40px;
-        position: absolute;
+        @media screen and (min-width: $bp--desktop) {
+            margin-top: 56px;
+            margin-bottom: 40px;
+        }
         // margin-left: 132vh;
     }
     &__about_us--confidenc li {
-        margin-bottom: 16px; 
         text-decoration: none;
+        @media screen and (min-width: $bp--desktop) {
+            margin-bottom: 16px;
+        }
     }
     &__about_us--confidenc span {
         color: var(--beauty-landing-25, #747272);
@@ -70,9 +93,20 @@
         color: #2B7FFF;
         transition: 0.2s;
     }
-    &__about_us--confidenc_conf-img {
-        position: relative;
+    &__about_us--confidenc__conf-img {
+        // position: relative;
+        // position: absolute;
         // padding-left: 6.2vh;
         bottom: 0;
+        display: none;
+        @media screen and (max-width: $bp--tablet) {
+            display: block;
+        }
     }
+}
+
+.link2 {
+    @media screen and (max-width: $bp--tablet) {
+            display: none;
+        }
 }
