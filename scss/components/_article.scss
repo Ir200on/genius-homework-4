@@ -1,17 +1,31 @@
 .About-us-2page {
     display:flex;
     margin-left: 100px;
+
+    @media screen and (max-width: $bp--desktop) {
+        margin-left: 20px;
+        display: inline-flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
     &__text {
         &--limited {
         max-width: 340px;
     }
     }
+
     &__art_text {
         display: inline-flex;
         flex-direction: column;
         align-items: flex-start;
         gap: 40px;
         margin-top: 34px;
+
+        @media screen and (max-width: $bp--desktop) {
+            margin-top: -30px;
+            gap: 24px;
+        }
     }
     &__art_text h1 {
         color: var(--beauty-landing-2-c-1, #011C44);
@@ -19,11 +33,30 @@
         font-size: 64px;
         font-weight: 700;
         line-height: 1;
+
+        @media screen and (max-width: $bp--desktop) {
+            color: var(--beauty-landing-2-c-1, #011C44);
+            font-family: Roboto;
+            font-size: 42px;
+            font-style: normal;
+            font-weight: 650;
+            line-height: normal;
+        }
     }
     &__art_text span{
         color: var(--beauty-landing-22, #2B7FFF);
         font-family: Play;
         font-size: 64px;
+
+        @media screen and (max-width: $bp--desktop) {
+            color: var(--beauty-landing-22, #2B7FFF);
+            font-family: Roboto;
+            font-size: 42px;
+            font-style: normal;
+            font-weight: 650;
+            line-height: normal;
+            text-transform: capitalize;
+        }
     }
     &__art_text #art_p_first {
         color: var(--beauty-landing-2-c-1, #011C44);
@@ -31,6 +64,16 @@
         font-size: 22px;
         font-weight: 400;
         line-height: 30px;
+
+        @media screen and (max-width: $bp--desktop) {
+            width: 380px;
+            color: var(--beauty-landing-2-c-1, #011C44);
+            font-family: Roboto;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
     }
     &__art_text #art_p_two {
         color: var(--beauty-landing-2-c-1, #011C44);
@@ -38,6 +81,16 @@
         font-size: 22px;
         font-weight: 400;
         line-height: 30px;
+
+        @media screen and (max-width: $bp--desktop) {
+            width: 380px;
+            color: var(--beauty-landing-2-c-1, #011C44);
+            font-family: Roboto;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
     }
     &__art_text #art_p_two span{
         color: var(--beauty-landing-2-c-1, #011C44);
@@ -46,6 +99,17 @@
         font-weight: 600;
         line-height: 38px;
         text-transform: capitalize;
+
+        @media screen and (max-width: $bp--desktop) {
+            width: 380px;
+            color: var(--beauty-landing-2-c-1, #011C44);
+            font-family: Roboto;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: normal;
+            text-transform: capitalize;
+        }
     }
 }
 
