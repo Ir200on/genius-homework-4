@@ -73,31 +73,69 @@
 
 
 .register button {
-    border-style: solid;
-    border-color: #2B7FFF;
-    cursor: pointer;
-    padding: 16px 32px;
-    align-items: center;
-    gap: 10px;
-    border-radius: 32px;
-    background: var(--beauty-landing-22, #2B7FFF);
-    color: var(--beauty-landing-2-background, #FFF);
-    font-family: Roboto;
-    font-size: 18px;
-    font-weight: 600;
-    line-height: normal;
-    margin-bottom: 8px;
+        display: inline-flex;
+        align-items: flex-start;
+        padding: 16px 24px ;
+        border-radius: 28px;
+        gap: 10px;
+        margin-bottom: 8px;
+
+        color: var(--beauty-landing-2-background, #FFF);
+        background: var(--beauty-landing-22, #2B7FFF);
+        text-decoration: none;
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+        border-style: solid;
+        border-color: #2B7FFF;
+
+        @media screen and (min-width: $bp--desktop) {
+        text-decoration: none;
+        display: flex;
+        padding: 16px 32px;
+        align-items: flex-start;
+        gap: 10px;
+        border-radius: 32px;
+        background: var(--beauty-landing-22, #2B7FFF);
+        justify-content: center;
+        margin-bottom: 8px;
+
+        border-style: solid;
+        border-color: #2B7FFF;
+        cursor: pointer;
+        font-family: Roboto;
+        font-size: 18px;
+        font-weight: 600;
+        color: #FFF;  
+          }
 }
+
 .register button a{
     text-decoration-line: none;
     color: #FFF;
 }
 .register button:active {
-    cursor: pointer;
-    font-family: Roboto;
-    font-size: 18px;
-    font-weight: 600;
-    color: var(--beauty-landing-2-background);
-    background-color: transparent;
-    border: 2px solid var(--beauty-landing-22);
+        padding: 16px 24px;
+        border-radius: 28px;
+        gap: 10px;
+        font-family: Roboto;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        color: var(--beauty-landing-2-background);
+        background-color: transparent;
+        border: 2px solid var(--beauty-landing-22);
+
+    @media screen and (min-width: $bp--desktop) {
+        padding: 16px 32px;
+        cursor: pointer;
+        font-family: Roboto;
+        font-size: 18px;
+        font-weight: 600;
+        color: var(--beauty-landing-2-background);
+        background-color: transparent;
+        border: 2px solid var(--beauty-landing-22);
+    }
 }
