@@ -14,6 +14,7 @@
     }
     @media screen and (min-width: $bp--desktop) {
         gap: 180px;
+        height: 280px;
         flex-direction: row;
         align-items: flex-start;
         text-align: left;
@@ -107,10 +108,7 @@
         transition: 0.2s;
     }
     &__about_us--confidenc__conf-img {
-        // display: block;
-        // position: relative;
-        margin-right: 75vh;
-        margin-top: 20vh;
+        padding-left: 159px;
         bottom: 0;
         // margin-right: 120px;
         // display: none;

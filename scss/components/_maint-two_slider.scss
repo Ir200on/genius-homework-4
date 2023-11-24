@@ -1,6 +1,9 @@
 .slider {
     text-align: center;
     margin-bottom: 32px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
     @media screen and (max-width: $bp--desktop) {
         margin-bottom: 64px;
     }
@@ -18,8 +21,8 @@
         }
     }
     &__slider-img:hover {
-        transform: scale(1.05);
-        transition: transform 0.3s;
+        // transform: scale(1.05);
+        // transition: transform 0.3s;
         cursor: pointer;
     }
     &__arrow_one {
@@ -49,24 +52,40 @@
         stroke: #ffffff;
     }
     &__img-1 {
-        padding-right: 16px;
         @media screen and (max-width: $bp--desktop) {
             padding-right: 0;
         }
     }
-    &__img-2 {
-        padding-right: 16px;
-        @media screen and (max-width: $bp--desktop) {
-            display: none;
-        }
-    }
-    &__img-3 {
-        @media screen and (max-width: $bp--desktop) {
-            display: none;
-        }
-    }
-
     &__slider_radio {
         text-align: center;
     }
+}
+
+.arrow {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    width: 44px;
+    height: 44px;
+}
+.arrowjs-prev {
+    margin-right: 32px;
+}
+.swiper-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0px;
+    padding: 0px;  
+}
+.swiper-slide {
+    width: 350px;
+}
+.slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.swiper-container {
+    overflow: hidden;
+    width: 75%;
 }
