@@ -11,7 +11,6 @@
     padding: 40px 40px;
     transition: opacity 0.5s, visibility 0.5s;
     z-index: 2;
-    
     &.is-hidden {
         opacity: 0;
         visibility: hidden;
@@ -31,12 +30,22 @@
     position: relative;
     padding: 42px 144px;
     overflow-y: auto;
+    @media screen and (max-width: $bp--desktop) {
+        width: 440px;
+        height: 560px;
+        padding: 42px 80px;
+        border-radius: 24px;
+        margin-bottom: 24px;
+    }
     &__btn-close {
         cursor: pointer;
         position: absolute;
         top: 40px;
         right: 40px;
       }
+      @media screen and (max-width: $bp--desktop) {
+        right: 55;
+    }
   }
   
   
@@ -50,16 +59,39 @@
       font-weight: 700;
       line-height: normal;
       margin-bottom: 40px;
+      @media screen and (max-width: $bp--desktop) {
+        color: var(--beauty-landing-2-background, #FFF);
+        text-align: center;
+        font-family: Roboto;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        margin-bottom: 20px;
+        // width: 375px;
+    }
   }
   .modal h3 {
       color: var(--beauty-landing-2-background, #FFF);
       text-align: center;
       font-family: Roboto;
-      font-size: 22px;
+      font-size: 20px;
       font-style: normal;
-      font-weight: 600;
+      font-weight: 300;
       line-height: normal;
       padding-bottom: 32px;
+
+      @media screen and (max-width: $bp--desktop) {
+        color: var(--beauty-landing-2-background, #FFF);
+        // text-align: center;
+        font-family: Roboto;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        // padding-top: 42px;
+        // margin-bottom: 24px;
+    }
   }
   span#reg{
       color: var(--beauty-landing-22, #2B7FFF);
