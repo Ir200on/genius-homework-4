@@ -55,6 +55,21 @@
         display: none;
     }
     }
+
+    &__text--ul-socpac_socsety {
+        fill: #011C44;
+        display: flex;
+        @media screen and (max-width: $bp--desktop) {
+            display: none;
+        }
+            &:hover {
+             fill: #2B7FFF;
+            transition: 0.2s;
+        }
+    }
+    &__text--ul-socpac {
+        display: flex;
+    }
 }
 
 .burger-menu {
@@ -96,28 +111,4 @@
 .nav p:hover{
     color: var(--beauty-landing-22, #2B7FFF);
     transition: 0.2s;
-}
-#icons_one {
-    cursor: pointer;
-    width: 25px;
-    height: 25px;
-    margin-right: 26px;
-    margin-top: 2px;
-}
-#icons_one:hover {
-    display: inline-block; 
-    transition: all 3s ease; 
-}
-#icons_two {
-    cursor: pointer;
-    width: 25px;
-    height: 25px;
-    margin-right: 26px;
-    margin-top: 2px;
-}
-#icons_three {
-    cursor: pointer;
-    width: 25px;
-    height: 25px;
-    margin-top: 2px;
 }

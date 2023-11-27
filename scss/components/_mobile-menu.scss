@@ -30,6 +30,20 @@
         padding-left: 20px;
     }
 
+    &__--ul-socpac_socsety {
+        fill: #011C44;
+            &:hover {
+             fill: #2B7FFF;
+            transition: 0.2s;
+        }
+    }
+    &__--ul-socpac {
+        display: flex;
+    }
+    &__text--ul-socpac {
+        display: flex;
+    }
+
     &__navbar {
         color: #011C44;
         font-family: Roboto;
