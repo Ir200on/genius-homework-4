@@ -125,32 +125,39 @@
     &__face_before {
         width: 335px;
         height: 328px;
-    }
-    &__face_before {
-        width: 335px;
-        height: 328px;
+        margin-bottom: 20px;
     }
     &__face_after {
         width: 335px;
         height: 328px;
+        margin-left: 250px;
     }
     &__blue_star {
-        position: absolute;
-        padding-bottom: 30vh;
-        margin-top: 86vh;
+        position: relative;
+        padding-bottom: 312px;
+        padding-left: 45px;
         animation: mymove 5s infinite;
+        @media screen and (max-width: $bp--tablet) {
+            display: none;
+          }
     }
     &__grey_star {
-        position: absolute;
-        margin-top: 110vh;
-        padding-bottom: 86.58px;
+        position: relative;
+        padding-bottom: 77px;
+        padding-left: -12px;
         animation: mymove 5s infinite;
+        @media screen and (max-width: $bp--desktop) {
+            display: none;
+          }
     }
     &__dark-blue_star {
-        position: absolute;
-        margin-top: 123vh;
-        margin-left: 15vh;
+        position: relative;
+        right: -142px;
+        top: 390px;
         animation: mymove 5s infinite;
+        @media screen and (max-width: $bp--tablet) {
+            display: none;
+          }
     }
     @keyframes mymove {
         0%   {top: 0px;}
